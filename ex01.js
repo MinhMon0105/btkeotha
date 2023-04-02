@@ -14,8 +14,6 @@ var myNodelist = document.getElementsByTagName("LI");
       div.style.display = "none";
     }
   }
- 
-  
   function newElement() { 
     var li = document.createElement("li");   
     var inputValue = document.getElementById("Input").value; 
@@ -34,8 +32,8 @@ var myNodelist = document.getElementsByTagName("LI");
     span.className = "close";
     span.appendChild(txt);
     li.appendChild(span);
-
-        for (i = 0; i < close.length; i++) {
+    
+       for (i = 0; i < close.length; i++) {
         close[i].onclick = function() {
             var div = this.parentElement;
             div.style.display = "none";
